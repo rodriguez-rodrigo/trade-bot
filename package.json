@@ -1,0 +1,19 @@
+{
+  "name": "tradebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodriguez Rodrigo Agustin",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^3.3.0"
+  },
+  "devDependencies": {
+    "electron": "^12.0.9",
+    "electron-reload": "^1.5.0"
+  }
+}

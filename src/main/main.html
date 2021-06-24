@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        body {
+            padding-top: 16px;
+        }
+
+        #chart{
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="usd" class="form-label">USD</label>
+                <input type="number" class="form-control" id="usd" aria-describedby="usdHelp">
+                <!-- <div id="amountHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="mb-3">
+                <label for="btc" class="form-label">BTC</label>
+                <input type="number" class="form-control" id="btc" aria-describedby="btcHelp">
+                <!-- <div id="amountHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="mb-3">
+                <label for="buyRange" class="form-label">Buy Range</label>
+                <input type="number" class="form-control" id="buyRange">
+            </div>
+            <div class="text-end">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>Prices</th>
+                    <th>MA60m</th>
+                    <th>Current</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+
+        <div>
+            <canvas id="chart"></canvas>
+        </div>
+
+        <div>
+            <ul id="list" class="list-group">
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
